@@ -17,11 +17,12 @@ class _IntroPage extends State<IntroPage> {
 
   Future<Timer> loadData() async {
     // 5초 지연 후 onDoneLoading 으로 페이지 이동한다.
-    return Timer(Duration(seconds: 3), onDoneLoading);
+    return Timer(Duration(seconds: 4), onDoneLoading);
   }
 
   // 지연이 완료 된 후
   onDoneLoading() async {
+    // 인트로가 완료되면 p
     Navigator.of(context)
         .pushReplacement(MaterialPageRoute(builder: (context) => MyHome()));
   }

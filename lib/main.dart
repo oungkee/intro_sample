@@ -38,19 +38,6 @@ class _MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
   }
 
   @override
-  void initState() {
-    super.initState();
-    controller = TabController(length: 4, vsync: this);
-    controller.addListener(() {
-      if (!controller.indexIsChanging) {
-        print('이전 index, ${controller.previousIndex}');
-        print('현재 index, ${controller.index}');
-        print('전체 탭 길이, ${controller.length}');
-      }
-    });
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       // 탭간 이동 시 기존 정보가 초기화 되는 것을 해결하기위해 IndexedStack 적용.
