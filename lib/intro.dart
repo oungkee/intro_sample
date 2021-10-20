@@ -17,7 +17,7 @@ class _IntroPage extends State<IntroPage> {
 
   Future<Timer> loadData() async {
     // 5초 지연 후 onDoneLoading 으로 페이지 이동한다.
-    return Timer(Duration(seconds: 5), onDoneLoading);
+    return Timer(Duration(seconds: 3), onDoneLoading);
   }
 
   // 지연이 완료 된 후
@@ -29,9 +29,9 @@ class _IntroPage extends State<IntroPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Intro Example'),
-      ),
+      // appBar: AppBar(
+      //   title: Text('Intro Example'),
+      // ),
       body: Container(
         // 중앙 정렬
         alignment: Alignment.center,
