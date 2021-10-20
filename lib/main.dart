@@ -6,6 +6,8 @@ import 'page2.dart';
 import 'page3.dart';
 import 'page4.dart';
 
+import 'package:lottie/lottie.dart'; // 애니메이션을 사용하기 위한 package
+
 // git push test.
 
 void main() => runApp(MyApp());
@@ -58,23 +60,27 @@ class _MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
         currentIndex: _currentIndex,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.looks_one, color: Colors.blue),
-            label: 'First',
+            // icon: Icon(Icons.looks_one, color: Colors.blue),
+            icon: Lottie.asset('assets/lottie/b_map.json', height: 40),
+            label: 'Map Quiz',
             backgroundColor: Colors.grey,
-            tooltip: 'tooltip',
+            tooltip: 'You can learn international flags!!',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.looks_two, color: Colors.blue),
+            // icon: Icon(Icons.looks_two, color: Colors.blue),
+            icon: Lottie.asset('assets/lottie/b_map.json', height: 56),
             label: 'Second',
             backgroundColor: Colors.yellow,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add, color: Colors.blue),
+            // icon: Icon(Icons.add, color: Colors.blue),
+            icon: Lottie.asset('assets/lottie/b_map.json', height: 56),
             label: 'Third',
             backgroundColor: Colors.white,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home, color: Colors.blue),
+            // icon: Icon(Icons.home, color: Colors.blue),
+            icon: Lottie.asset('assets/lottie/b_map.json', height: 56),
             label: 'Forth',
             backgroundColor: Colors.green,
           ),
