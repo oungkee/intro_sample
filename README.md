@@ -1,6 +1,6 @@
 # intro_sample
 
-A new Flutter project.
+Lottie 를 활용한 인트로 화면 Sample project
 
 ## Getting Started
 
