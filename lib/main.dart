@@ -61,26 +61,26 @@ class _MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
         items: [
           BottomNavigationBarItem(
             // icon: Icon(Icons.looks_one, color: Colors.blue),
-            icon: Lottie.asset('assets/lottie/b_map.json', height: 40),
+            icon: Lottie.asset('assets/lottie/b_map2.json', height: 56),
             label: 'Map Quiz',
             backgroundColor: Colors.grey,
             tooltip: 'You can learn international flags!!',
           ),
           BottomNavigationBarItem(
             // icon: Icon(Icons.looks_two, color: Colors.blue),
-            icon: Lottie.asset('assets/lottie/b_map.json', height: 56),
+            icon: Lottie.asset('assets/lottie/b_flag.json', height: 56),
             label: 'Second',
             backgroundColor: Colors.yellow,
           ),
           BottomNavigationBarItem(
             // icon: Icon(Icons.add, color: Colors.blue),
-            icon: Lottie.asset('assets/lottie/b_map.json', height: 56),
+            icon: Lottie.asset('assets/lottie/b_flag2.json', height: 56),
             label: 'Third',
             backgroundColor: Colors.white,
           ),
           BottomNavigationBarItem(
             // icon: Icon(Icons.home, color: Colors.blue),
-            icon: Lottie.asset('assets/lottie/b_map.json', height: 56),
+            icon: Lottie.asset('assets/lottie/b_search.json', height: 56),
             label: 'Forth',
             backgroundColor: Colors.green,
           ),
