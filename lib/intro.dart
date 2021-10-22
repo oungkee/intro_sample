@@ -22,7 +22,7 @@ class _IntroPage extends State<IntroPage> {
 
   // 지연이 완료 된 후
   onDoneLoading() async {
-    // 인트로가 완료되면 p
+    // 인트로가 완료되면 다시 main의 MyHome 위젯으로 이동한다.
     Navigator.of(context)
         .pushReplacement(MaterialPageRoute(builder: (context) => MyHome()));
   }
@@ -30,9 +30,7 @@ class _IntroPage extends State<IntroPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text('Intro Example'),
-      // ),
+      // appBar 없이 진행.
       body: Container(
         // 중앙 정렬
         alignment: Alignment.center,

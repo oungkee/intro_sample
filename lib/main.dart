@@ -46,10 +46,10 @@ class _MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
       body: IndexedStack(
         index: _currentIndex,
         children: [
-          page1(),
-          page2(),
-          page3(),
-          page4(),
+          page1(), //Flag Quiz
+          page2(), //Country Quiz
+          page3(), //Rank
+          page4(), //Information
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

@@ -1,12 +1,27 @@
 import 'package:flutter/material.dart';
 
-class page4 extends StatelessWidget {
+class page4 extends StatefulWidget {
+  @override
+  State<page4> createState() => _page4State();
+}
+
+class _page4State extends State<page4> {
+  void _incrementCounter() {
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Center(
-          child: Text('네 번째 페이지'),
+      appBar: AppBar(
+        title: Text('Information'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const Text('Information'),
+          ],
         ),
       ),
     );
